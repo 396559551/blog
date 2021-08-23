@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件传值 | 张子涵</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blog/images/favicon.svg">
+    <meta name="description" content="A little change A big grow~">
+    <meta name="Keywords" content="张先生的world and life">
+    <meta name="author" content="张先生">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.8be25012.css" as="style"><link rel="preload" href="/blog/assets/js/app.53342be2.js" as="script"><link rel="preload" href="/blog/assets/js/3.0b1a4a80.js" as="script"><link rel="preload" href="/blog/assets/js/1.a6e5c523.js" as="script"><link rel="preload" href="/blog/assets/js/62.fb827046.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.983dca95.js"><link rel="prefetch" href="/blog/assets/js/11.bf69bc4b.js"><link rel="prefetch" href="/blog/assets/js/12.90e8089a.js"><link rel="prefetch" href="/blog/assets/js/13.9ddacfa4.js"><link rel="prefetch" href="/blog/assets/js/14.743a0812.js"><link rel="prefetch" href="/blog/assets/js/15.1f036a60.js"><link rel="prefetch" href="/blog/assets/js/16.dcc5f0de.js"><link rel="prefetch" href="/blog/assets/js/17.a7f0bd0e.js"><link rel="prefetch" href="/blog/assets/js/18.752cdc74.js"><link rel="prefetch" href="/blog/assets/js/19.8618e3bf.js"><link rel="prefetch" href="/blog/assets/js/20.4a737552.js"><link rel="prefetch" href="/blog/assets/js/21.0af2da9b.js"><link rel="prefetch" href="/blog/assets/js/22.e73bcb93.js"><link rel="prefetch" href="/blog/assets/js/23.4ff627e8.js"><link rel="prefetch" href="/blog/assets/js/24.01a56d74.js"><link rel="prefetch" href="/blog/assets/js/25.f491043b.js"><link rel="prefetch" href="/blog/assets/js/26.bd44235e.js"><link rel="prefetch" href="/blog/assets/js/27.2385a01f.js"><link rel="prefetch" href="/blog/assets/js/28.b9586139.js"><link rel="prefetch" href="/blog/assets/js/29.231ae845.js"><link rel="prefetch" href="/blog/assets/js/30.ae0e25f1.js"><link rel="prefetch" href="/blog/assets/js/31.0c801583.js"><link rel="prefetch" href="/blog/assets/js/32.a9f3ff32.js"><link rel="prefetch" href="/blog/assets/js/33.47751d82.js"><link rel="prefetch" href="/blog/assets/js/34.050a3e7e.js"><link rel="prefetch" href="/blog/assets/js/35.c14ff3d4.js"><link rel="prefetch" href="/blog/assets/js/36.078d3f83.js"><link rel="prefetch" href="/blog/assets/js/37.341001f6.js"><link rel="prefetch" href="/blog/assets/js/38.a1526310.js"><link rel="prefetch" href="/blog/assets/js/39.eb154522.js"><link rel="prefetch" href="/blog/assets/js/4.f80421e1.js"><link rel="prefetch" href="/blog/assets/js/40.f12d0793.js"><link rel="prefetch" href="/blog/assets/js/41.961315de.js"><link rel="prefetch" href="/blog/assets/js/42.46b9f888.js"><link rel="prefetch" href="/blog/assets/js/43.63d8d981.js"><link rel="prefetch" href="/blog/assets/js/44.196540d2.js"><link rel="prefetch" href="/blog/assets/js/45.7ddcb927.js"><link rel="prefetch" href="/blog/assets/js/46.634f2811.js"><link rel="prefetch" href="/blog/assets/js/47.8fc9fdaf.js"><link rel="prefetch" href="/blog/assets/js/48.dd5e2da5.js"><link rel="prefetch" href="/blog/assets/js/49.03004973.js"><link rel="prefetch" href="/blog/assets/js/5.e69adf42.js"><link rel="prefetch" href="/blog/assets/js/50.af80d1fd.js"><link rel="prefetch" href="/blog/assets/js/51.ade1db90.js"><link rel="prefetch" href="/blog/assets/js/52.58e3af26.js"><link rel="prefetch" href="/blog/assets/js/53.7234125b.js"><link rel="prefetch" href="/blog/assets/js/54.87a0b98c.js"><link rel="prefetch" href="/blog/assets/js/55.25cafcfe.js"><link rel="prefetch" href="/blog/assets/js/56.372c58f5.js"><link rel="prefetch" href="/blog/assets/js/57.318392bd.js"><link rel="prefetch" href="/blog/assets/js/58.db5c192e.js"><link rel="prefetch" href="/blog/assets/js/59.e5a9799c.js"><link rel="prefetch" href="/blog/assets/js/6.fca8bc93.js"><link rel="prefetch" href="/blog/assets/js/60.3f667f07.js"><link rel="prefetch" href="/blog/assets/js/61.b71ebbc3.js"><link rel="prefetch" href="/blog/assets/js/63.2e071d89.js"><link rel="prefetch" href="/blog/assets/js/64.827dbe5d.js"><link rel="prefetch" href="/blog/assets/js/65.c1d42658.js"><link rel="prefetch" href="/blog/assets/js/66.1e8a8b5e.js"><link rel="prefetch" href="/blog/assets/js/67.25625e87.js"><link rel="prefetch" href="/blog/assets/js/68.744c74ff.js"><link rel="prefetch" href="/blog/assets/js/69.1a7c36bf.js"><link rel="prefetch" href="/blog/assets/js/7.3bade426.js"><link rel="prefetch" href="/blog/assets/js/70.b29e0d72.js"><link rel="prefetch" href="/blog/assets/js/71.7a69c82b.js"><link rel="prefetch" href="/blog/assets/js/72.d9d549d5.js"><link rel="prefetch" href="/blog/assets/js/73.d748e8df.js"><link rel="prefetch" href="/blog/assets/js/74.91fec5f0.js"><link rel="prefetch" href="/blog/assets/js/75.f2a71a56.js"><link rel="prefetch" href="/blog/assets/js/8.54d76498.js"><link rel="prefetch" href="/blog/assets/js/9.ea524354.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.8be25012.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>张子涵</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>A little change A big grow~</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>张子涵</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/images/favicon.svg" alt="张子涵" class="logo"> <span class="site-name">张子涵</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/DeepLearning/" class="nav-link"><i class="undefined"></i>
+  DeepLearning
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTTP/" class="nav-link"><i class="undefined"></i>
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      个人工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.uupoop.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.aconvert.com/cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线转换格式
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://imagecompressor.com/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线压缩图片
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.zzzfun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  番剧Zzzfun
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://drive.google.com/file/d/1jz3O9j1huPeqewwkdzYtoP1JG_-XftV_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  MathType-6.9d
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/396559551/rebook" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电子书库(前端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/rebook-node" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电子书库(后端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/mall" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电商后台管理系统(前端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/mall-node" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电商后台管理系统(后端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/ebook" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电子书阅读器WebApp
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/blog/views/About/resume.html" class="nav-link"><i class="iconfont reco-document"></i>
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="https://www.csdn.net/?spm=1001.2100.3001.4476" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/blog/images/avatar.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    张子涵
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>60</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>6</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/DeepLearning/" class="nav-link"><i class="undefined"></i>
+  DeepLearning
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTTP/" class="nav-link"><i class="undefined"></i>
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      个人工具箱
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.uupoop.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线PS
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.aconvert.com/cn/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线转换格式
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://imagecompressor.com/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  在线压缩图片
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.zzzfun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  番剧Zzzfun
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://drive.google.com/file/d/1jz3O9j1huPeqewwkdzYtoP1JG_-XftV_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  MathType-6.9d
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont icon-tools"></i>
+      项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/396559551/rebook" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电子书库(前端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/rebook-node" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电子书库(后端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/mall" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电商后台管理系统(前端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/mall-node" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电商后台管理系统(后端)
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/ebook" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont icon-vue"></i>
+  电子书阅读器WebApp
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/views/About/author.html" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/blog/views/About/resume.html" class="nav-link"><i class="iconfont reco-document"></i>
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="https://www.csdn.net/?spm=1001.2100.3001.4476" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/396559551/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>组件传值</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>张子涵</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">组件传值</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>张子涵</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>7/3/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>Vue</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="组件间通信"><a href="#组件间通信" class="header-anchor">#</a> 组件间通信</h2> <p>组件间通信是我们在 Vue 项目中不可避免的问题，深刻了解了 Vue 组件间通信的几种方式，才能让我们在处理各种交互问题时游刃有余。</p> <h3 id="props"><a href="#props" class="header-anchor">#</a> Props</h3> <p>Vue 中，最基本的通信方式就是 Props，它是父子组件通信中父组件传值给子组件的一种方式。它允许以数组形式接收，但是更推荐你开启类型检查的形式。更详细的类型检查前往 <a href="https://cn.vuejs.org/v2/guide/components-props.html" target="_blank" rel="noopener noreferrer">vue 文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <div class="language- extra-class"><pre class="language-text"><code>// communication.vue
+&lt;communication-sub v-bind=&quot;dataProps&quot;&gt;&lt;/communication-sub&gt;
+// v-bind=&quot;dataProps&quot; 等同于 :title=&quot;title&quot;，适用于多个参数一起传递
+···
+data() {
+    return {
+        dataProps: {
+            title: '我是父组件的值',
+        }
+    }
+}
+// communication-sub.vue
+&lt;div class=&quot;communication-sub&quot;&gt;
+    {{title}}
+&lt;/div&gt;
+···
+props: ['title']
+// 更推荐开启类型检查
+props: {
+    title: {
+        type: String,
+        required: true,
+        default: '' // 允许指定默认值，引用类型需要函数返回
+    }
+}
+···
+</code></pre></div><p>我们都知道，Props 是单向数据流，这是 Vue 为了避免子组件意外改变父组件的状态，从而导致数据流向难以理解而做出的限制。所以 Vue 推荐需要改动的时候，通过改变父组件的值从而触发 Props 的响应。或者，我们可以在接收非引用类型的值时，使用子组件自身的 data 做一次接收。</p> <div class="language- extra-class"><pre class="language-text"><code>props: ['title'],
+data: function () {
+  return {
+    text: this.title
+  };
+}
+</code></pre></div><p>为什么是非引用类型呢，因为在 JavaScript 中，引用类型的赋值，实际是内存地址的传递。所以上面栗子中的简单赋值，显然会指向同一个内存地址，所以如果是数组或是对象，你可能需要一次深拷贝。</p> <div class="language- extra-class"><pre class="language-text"><code>let obj = JSON.parse(JSON.stringify(obj));
+</code></pre></div><p>上面这个操作有一些缺陷，不能序列化函数、undefined、循环引用等，详见<a href="https://www.jianshu.com/p/b084dfaad501" target="_blank" rel="noopener noreferrer">传送门<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，但是也能应付一些日常情况了。</p> <p>事实上，在 Props 是引用类型时，单独修改对象、数组的某个属性或下标，Vue 并不会抛出错误。当然，前提是你要非常清楚自己在做什么，并写好注释，防止你的小伙伴们疑惑。</p> <p>有的同学可能知道，在组件上绑定的属性，如果没有在组件内部用 Props 声明，会默认绑定到组件的根元素上去。还是之前的栗子：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;communication-sub v-bind=&quot;dataProps&quot; class=&quot;one&quot; type=&quot;div&quot;&gt;&lt;/communication-sub&gt;
+</code></pre></div><p>结果如下：</p> <p><a href="https://camo.githubusercontent.com/71bbba9be61a817e41350989caa5bfd87027b336bf0b69641702796d3df55aa7/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32332f313639616163376162333639353064323f773d37303026683d373126663d706e6726733d33393030" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/71bbba9be61a817e41350989caa5bfd87027b336bf0b69641702796d3df55aa7/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32332f313639616163376162333639353064323f773d37303026683d373126663d706e6726733d33393030" alt="img"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>这是 Vue 默认处理的，而且，除了 class 和 style 采用合并策略，其它特性（如上栗 type）会替换掉原来根元素上的属性值。当然，我们也可以显示的在组件内部关闭掉这个特性：</p> <div class="language- extra-class"><pre class="language-text"><code>...
+inheritAttrs: false,
+props: ['title']
+</code></pre></div><p>利用 inheritAttrs，我们还可以方便的把组件绑定的其它特性，转移到我们指定的元素上。这就需要用到下一个我们要讲的 <code>$attrs</code> 了。</p> <h3 id="attrs、listeners"><a href="#attrs、listeners" class="header-anchor">#</a> attrs、listeners</h3> <p>我们在使用组件库的时候经常会这么写：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;el-input v-model=&quot;input&quot; placeholder=&quot;请输入内容&quot;&gt;&lt;/el-input&gt;
+</code></pre></div><p>实际渲染后：</p> <p><a href="https://camo.githubusercontent.com/99afb858b921d6ecca4d682bd08c4d4bc93c669d12697472a67a9d7cacbc31a4/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32332f313639616164376263353163613535353f773d36343526683d31393026663d706e6726733d35303530" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/99afb858b921d6ecca4d682bd08c4d4bc93c669d12697472a67a9d7cacbc31a4/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32332f313639616164376263353163613535353f773d36343526683d31393026663d706e6726733d35303530" alt="img"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>可以看到我们指定的的 placeholder 是渲染在 input 上的，但是 input 并不是根元素。难道都用 Props 声明后，再赋值给 input？这种情况就可以用到 <code>$attrs</code> 了，改造一下我们之前那个栗子。</p> <div class="language- extra-class"><pre class="language-text"><code>// communication.vue
+&lt;template&gt;
+    &lt;div class=&quot;communication&quot;&gt;
+        &lt;communication-sub v-bind=&quot;dataProps&quot; class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;请输入内容&quot;&gt;
+        &lt;/communication-sub&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import communicationSub from './communication-sub.vue';
+export default{
+    name: 'communication',
+    data() {
+        return {
+            dataProps: {
+                title: '我是 communication 的值',
+            }
+        }
+    },
+    components: {
+        communicationSub
+    }
+}
+&lt;/script&gt;
+
+// communication-sub.vue
+···
+&lt;div class=&quot;communication-sub&quot;&gt;
+    &lt;input v-bind=&quot;$attrs&quot; v-model=&quot;title&quot;&gt;&lt;/input&gt;
+&lt;/div&gt;
+···
+ export default {
+    inheritAttrs: false
+}
+</code></pre></div><p><a href="https://camo.githubusercontent.com/abbaa7d59781d42b708070e1689ce6aee49e7bef7a38802b5cffc0e508cb649f/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32332f313639616234356635393037663835613f773d36333026683d323926663d706e6726733d32373435" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/abbaa7d59781d42b708070e1689ce6aee49e7bef7a38802b5cffc0e508cb649f/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32332f313639616234356635393037663835613f773d36333026683d323926663d706e6726733d32373435" alt="img"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>可以看到，type 已经转移到了子元素 input 标签上，但是 class 没有。这是因为 <code>inheritAttrs: false</code> 选项不会影响 style 和 class 的绑定。<strong>可以看出 <code>$attrs</code> 则是将没有被组件内部 Props 声明的传值（也叫非 Props 特性）收集起来的一个对象</strong>，再通过 v-bind 将其绑定在指定元素上。这也是 Element 等组件库采用的策略。</p> <p><strong>这里需要注意一点，通过 $attrs 指定给元素的属性，不会与该元素原有属性发生合并或替换，而是以原有属性为准</strong>。举个例子，假如我将上述 input 的 type 默认设置为 password。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;input v-bind=&quot;$attrs&quot; v-model=&quot;title&quot; type=&quot;password&quot;&gt;&lt;/input&gt;
+</code></pre></div><p>则不会采用 $attrs 中的 type: 'text'，将以 password 为准，所以如果需要默认值的属性，建议不要用这种方式。</p> <p><code>$listeners</code> 同 <code>$attrs</code> 类似，<strong>可以看做是一个包含了组件上所有事件监听器（包括自定义事件、不包括.native修饰的事件）的对象</strong>。它也支持上述的写法，适用于将事件安放于组件内指定元素上。</p> <div class="language- extra-class"><pre class="language-text"><code>// communication.vue
+&lt;communication-sub v-bind=&quot;dataProps&quot;
+class=&quot;input&quot;
+type=&quot;text&quot;
+placeholder=&quot;请输入内容&quot;
+@focus=&quot;onFocus&quot; &gt;
+&lt;/communication-sub&gt;
+···
+methods: {
+    onFocus() {
+        console.log('onFocus');
+    }
+}
+// communication-sub.vue
+&lt;input v-bind=&quot;$attrs&quot; v-model=&quot;title&quot; v-on=&quot;$listeners&quot;&gt;&lt;/input&gt;
+</code></pre></div><p>给之前的栗子绑定一个聚焦事件，在子组件中通过 <code>$listeners</code> 绑定给 input，则会在 input 聚焦时触发。</p> <p>那么除了用在这种给组件内指定元素绑定特性和事件的情况，还有哪些场景可以用到呢？官方说明：在创建更高层次的组件时非常有用。比如在祖孙组件中传递数据，在孙子组件中触发事件后要在祖辈中做相应更新。我们继续之前的栗子：在孙辈组件触发点击事件，然后在祖辈中修改相应的 data。</p> <p><a href="https://camo.githubusercontent.com/5ba910746895be6158c82f5f5215726667c2f27b3ab0e07b0bcf2192dbc4a72b/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32342f313639616236366633623239636633393f773d3130383426683d31373226663d67696626733d3136323031" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/5ba910746895be6158c82f5f5215726667c2f27b3ab0e07b0bcf2192dbc4a72b/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32342f313639616236366633623239636633393f773d3130383426683d31373226663d67696626733d3136323031" alt="img"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language- extra-class"><pre class="language-text"><code>// communication.vue
+&lt;communication-sub v-bind=&quot;dataProps&quot;
+                @click=&quot;onCommunicationClick&quot;&gt;
+&lt;/communication-sub&gt;
+···
+methods: {
+    onCommunicationClick() {
+        this.dataProps.title = '我是点击之后的值';
+    }
+};
+
+// communication-sub.vue
+&lt;communication-min-sub v-on=&quot;$listeners&quot;&gt;&lt;/communication-min-sub&gt; // 子组件中将事件透传到孙辈
+
+// communication-min-sub.vue
+&lt;template&gt;
+    &lt;div class=&quot;communication-min-sub&quot;&gt;
+        &lt;p&gt;我是 communication-min-sub&lt;/p&gt;
+        &lt;button v-on=&quot;$listeners&quot;&gt;click&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default{
+    name: 'communication-min-sub',
+    inheritAttrs: false
+}
+&lt;/script&gt;
+</code></pre></div><p>这样就能很方便的在多级组件的子级组件中，快速访问到父组件的数据和方法。正如在刚才的例子中，button 点击时，是直接调用的 communication.vue 中定义的方法。</p> <h3 id="依赖注入-provide、inject"><a href="#依赖注入-provide、inject" class="header-anchor">#</a> 依赖注入 provide、inject</h3> <p>上面的方法，在大多数多级组件嵌套的场景很有用，但有时我们遇到的并不一定是有父子关系的组件。比如基础组件中的 Select 下拉选择器。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;el-select v-model=&quot;value&quot; placeholder=&quot;请选择&quot;&gt;
+    &lt;el-option
+      v-for=&quot;item in options&quot;
+      :key=&quot;item.value&quot;
+      :label=&quot;item.label&quot;
+      :value=&quot;item.value&quot;&gt;
+    &lt;/el-option&gt;
+&lt;/el-select&gt;
+</code></pre></div><p>相信大家都使用过上栗或者类似于上栗的基础组件，它们借助 vue <a href="https://cn.vuejs.org/v2/guide/components-slots.html" target="_blank" rel="noopener noreferrer">插槽<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 实现。所以这个时候，el-select 和 el-option 之间的数据通信，我们之前的 <code>$attrs</code>、<code>$listeners</code>就没有用武之地了。有同学可能不太理解上面的代码为什么要通信，我简单介绍一下 Element 的处理方式：</p> <p><a href="https://camo.githubusercontent.com/7b7cbfe334b3d6f14f95520503c5de7ec78462943520e9d9b046051f6c4ee7a1/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32342f313639616431633761363333633166313f773d35373226683d33333026663d706e6726733d37353331" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/7b7cbfe334b3d6f14f95520503c5de7ec78462943520e9d9b046051f6c4ee7a1/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f332f32342f313639616431633761363333633166313f773d35373226683d33333026663d706e6726733d37353331" alt="img"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>我们可以简单的认为（Element 源码比这个要稍复杂，为了方便理解，简化一下，如有需要，可直接前往源码阅读），在 el-select 中有一个 input 元素，el-option 中是一列渲染好的 li。根据需求，我们在选中某个 li 的时候，要通知 input 展示相应的数据。而且我们在实际使用的时候，一般还伴随 el-form、el-form-item等组件，所以迫切需要一种方式:</p> <blockquote><p>可以允许一个祖先组件向其所有子孙后代注入一个依赖，不论组件层次有多深，并在起上下游关系成立的时间里始终生效。--- <a href="https://cn.vuejs.org/v2/api/#provide-inject" target="_blank" rel="noopener noreferrer">Vue 文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>有同学可能会想到，这种多级的可以用 Vuex、EventBus等方式，当然可以。只不过我们现在的前提是基础组件，一般第三方组件库是不会增加一些额外的依赖的。事实上 Vue 本身并不推荐直接在业务中使用 provide、inject，一般在组件、插件库用到的比较多。</p> <p>但是在项目比较小、业务逻辑比较简单的时候，我们完全不必特意引入 Vuex。只要使用得当，provide、inject 确实不失为一种好办法。说了这么多，我们来看一下具体用法，我们将之前的栗子，改为用 provide、inject 来实现。</p> <div class="language- extra-class"><pre class="language-text"><code>// communication.vue
+&lt;communication-sub v-bind=&quot;dataProps&quot; &gt;
+&lt;/communication-sub&gt;
+// @click=&quot;onCommunicationClick&quot; 移除之前绑定的时间
+···
+// 在 provide 添加子代需要接收的方法 onCommunicationClick，
+// 也可以直接指定为 this，子代便能访问父代所有的数据和方法。
+provide: function () {
+    return {
+        onCommunicationClick: this.onCommunicationClick
+    }
+},
+methods: {
+    onCommunicationClick() {
+        this.dataProps.title = '我是点击之后的值';
+    }
+};
+
+// communication-sub.vue
+&lt;communication-min-sub&gt;&lt;/communication-min-sub&gt;
+// 移除之前的 v-on=&quot;$listeners&quot;，因为在这个组件中不需要用到父组件的方法，所以不用做其它处理
+
+// communication-min-sub.vue
+&lt;template&gt;
+    &lt;div class=&quot;communication-min-sub&quot;&gt;
+        ···
+        &lt;button @click=&quot;onCommunicationClick&quot;&gt;click&lt;/button&gt;
+        // 移除 v-on=&quot;$listeners&quot;，然后绑定 inject 接收到的方法
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default{
+    name: 'communication-min-sub',
+    inject: ['onCommunicationClick'] // inject 接收父组件的方法
+}
+&lt;/script&gt;
+</code></pre></div><p>这种写法和之前的 $listeners 得到的效果是一样的，就不再放图了。大家可以自己尝试一下，也可以前往源码 <a href="https://github.com/wuyawei/webrtc-stream" target="_blank" rel="noopener noreferrer">webrtc-stream<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <p><strong>思考</strong>：有些同学可能会想到，如果我在根实例，app.vue 中如此设置：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+  export default {
+    provide () {
+      return {
+        app: this // 设置app为this
+      }
+    },
+    data () {
+      return {
+        userInfo: null,
+        otherState: null
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre></div><p>那这样把所有的状态管理都放在 app.data 中，所有的子代中不就可以共享了吗？是不是就不需要 Vuex 了呢？实际上，Vue 本身就提供了一个方法来访问根实例 <code>$root</code>，所以即使没有 provide 也是可以做到的。那为什么不这么用呢？还是前面提到的原因，不利于追踪维护，也失去了所谓状态管理的意义。不过，如果你的项目足够小的话，依然可以这么使用。</p> <h3 id="ref、parent、children"><a href="#ref、parent、children" class="header-anchor">#</a> ref、parent、children</h3> <p>我们前面一直说的都是子组件如何触达父组件，那么父组件能不能访问到子组件呢？当然是可以的。</p> <ul><li>ref</li></ul> <p>简单来说就是获取元素的 Dom 对象和子组件实例。如果在普通的 DOM 元素上使用，引用指向的就是 DOM 元素；如果用在子组件上，引用就指向组件实例。获取 Dom 元素就是为了进行一些 Dom 操作，需要注意的一点就是，<strong>要在 Dom 加载完成后使用</strong>，否则可能获取不到。比如我要将之前 input 的字体颜色改成红色：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;input type=&quot;text&quot; v-model=&quot;dataProps.title&quot; ref=&quot;input&quot;&gt;
+...
+mounted() {
+    this.$nextTick(_ =&gt; { // 确保 Dom 更新完成
+        this.$refs['input'].style.color = 'red';
+    });
+}
+// 这里只是举一个栗子，实际项目中的需求，最好通过 class 的方式，尽量减少 Dom 操作。
+</code></pre></div><p>那什么情况下需要获取组件实例呢？比如父元素的某个状态改变，需要子组件进行 http 请求更新数据。通常情况下，我们会选择通过 Props 将状态传递给子组件，然后子组件进行 Watch 监测，如果有变更，则进行相应操作。这个时候，我们便可以选择使用 ref。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;child ref=&quot;child&quot;&gt;&lt;/child&gt;
+···
+&lt;script&gt;
+  export default {
+    methods () {
+      onStateChange() { // 变更状态后直接调用子组件方法进行更新
+          this.$refs['child'].updateData();
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre></div><ul><li><code>$children</code>、<code>$parent</code></li></ul> <p>无独有偶，<code>$children</code> 同样可以完成上面的任务。<code>$children</code> 和 <code>$parent</code>，顾名思义，一个会找到当前组件的子组件，一个会找到当前组件的父组件。如果有多个子组件，需要依赖组件实例的 name 属性。改写一下上面的方法：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+  export default {
+    methods () {
+      onStateChange() { // 子组件返回的是一个数组，多个子组件用 $options.name 区分。
+          this.$children[0].updateData();
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre></div><p><code>$parent</code> 和 <code>$children</code> 用法一样，不过 <code>$parent</code> 返回的父组件实例，不是数组，因为父组件肯定只有一个。ref、parent、children 它们几个的一个缺点就是无法处理跨级组件和兄弟组件，后续我们会介绍 dispatch 和 broadcast 方法，实现跨级通信。</p> <h3 id="emit、on、off"><a href="#emit、on、off" class="header-anchor">#</a> emit、on、off</h3> <p><code>$emit</code>，想必大家都非常熟悉，我们通常用作父子组件间通信，我们也叫它自定义事件。<code>$emit</code> 和 <code>$on</code>都是组件自身的方法，<code>$on</code> 可以监听 <code>$emit</code> 派发的事件，<code>$off</code> 则用来取消事件监听。这也是我们下一个要讲的通信方式 EventBus 所依赖的原理。</p> <div class="language- extra-class"><pre class="language-text"><code>// 父组件
+&lt;template&gt;
+    &lt;button-component @clickButton=&quot;clickButton&quot;&gt;&lt;/button-component&gt;
+    // 在父组件利用 v-on 监听
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+    methods: {
+      clickButton () { ··· }
+    }
+}
+&lt;/script&gt;
+
+// 子组件
+&lt;template&gt;
+    &lt;button @click=&quot;handleClick&quot;&gt;&lt;/button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+    methods: {
+      handleClick () { // 触发 $emit
+        this.$emit('clickButton');
+      }
+    },
+    mounted() {
+        this.$on('clickButton', (...arr) =&gt; { // 也可以自己监听 $emit，虽然没什么用···
+            console.log(...arr);
+        })
+    }
+}
+&lt;/script&gt;
+</code></pre></div><h3 id="eventbus"><a href="#eventbus" class="header-anchor">#</a> EventBus</h3> <p><code>$emit</code>的痛点依然是不支持跨级和兄弟组件，Vue 官方推荐我们使用一个新的 Vue 实例来做一个全局的事件通信（或者叫中央事件总线···），也就是我们要讲的 EventBus。了解过的同学都知道，正常的 bus，我们一般会挂载到 Vue 的 prototype 上，方便全局调用。</p> <div class="language- extra-class"><pre class="language-text"><code>// main.js
+Vue.prototype.$bus = new Vue();
+</code></pre></div><p>依旧改写之前的栗子：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!--communication.vue--&gt;
+&lt;communication-sub v-bind=&quot;dataProps&quot; &gt;
+&lt;/communication-sub&gt;
+···
+beforeDestroy() { &lt;!-- 实例销毁时，需要卸载监听事件 --&gt;
+    this.$bus.$off('busClick');
+},
+created() {  &lt;!-- 监听子组件触发的 Bus 事件--&gt;
+    this.$bus.$on('busClick', (data) =&gt; {
+        this.dataProps.title = data;
+    });
+}
+
+&lt;!--communication-min-sub.vue--&gt;
+&lt;template&gt;
+    &lt;div class=&quot;communication-min-sub&quot;&gt;
+        &lt;button @click=&quot;busClick&quot;&gt;click bus&lt;/button&gt;
+        &lt;!--子组件触发点击事件--&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default{
+    methods: {
+        busClick() {
+            this.$bus.$emit('busClick', 'bus 触发了');
+        }
+    }
+}
+&lt;/script&gt;
+</code></pre></div><p>这是一个基础的 EventBus 的实现。现在我们设想一下，类似于 userInfo 这样的信息，在很多页面都需要用到，那我们需要在许多页面都做 <code>$on</code> 监听的操作。那能否将这些操作整合到一起呢？我们一起来看：</p> <div class="language- extra-class"><pre class="language-text"><code> // 新建一个 eventBus.js
+import Vue from 'vue';
+const bus = new Vue({
+    data () {
+        return {
+            userInfo: {}
+        }
+    },
+    created () {
+        this.$on('getUserInfo', val =&gt; {
+            this.userInfo = val;
+        })
+    }
+});
+export default bus;
+// main.js
+import bus from './eventBus';
+Vue.prototype.$bus = bus;
+// app.vue
+methods: {
+    getUserInfo() {
+        ajax.post(***).then(data =&gt; {
+            this.$bus.$emit('getUserInfo', data); // 通知 EventBus 更新 userInfo
+        })
+    }
+}
+</code></pre></div><p>这样在其他页面用到 userInfo 的时候，只需要 <code>this.$bus.userInfo</code> 就可以了。注意刚刚其实没有用 off 卸载掉监听，因为其实 userInfo 这种全局信息，并没有一个准确的说要销毁的时机，浏览器关闭的时候，也用不着我们处理了。但是，如果只是某个页面组件用到的，建议还是用最开始的方法，在页面销毁的时候卸载掉。</p> <p>不过反过来讲，既然用到了 EventBus，说明状态管理并不复杂，否则还是建议用 Vuex 来做。最后再给大家推荐一篇文章 <a href="https://juejin.im/post/5b45971ff265da0f9c678b55" target="_blank" rel="noopener noreferrer">Vue中eventbus很头疼？我来帮你<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，作者处理 EventBus 的思路很巧妙，大家不妨仔细看看。</p> <h3 id="派发与广播-dispatch-与-broadcast"><a href="#派发与广播-dispatch-与-broadcast" class="header-anchor">#</a> 派发与广播：dispatch 与 broadcast</h3> <blockquote><p>此部分参考自 <a href="https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js" target="_blank" rel="noopener noreferrer">Element 源码<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>如果有接触过 Vue.js 1.x 的同学，应该对此有所了解。在 1.x 的实现中，是有 <code>$dispatch</code> 和 <code>$broadcast</code> 方法的。<code>$dispatch</code> 的主要作用是向上级组件派发事件，<code>$broadcast</code> 则是向下级广播。它们的优点是都支持跨级，再看一下官方废弃这两个方法的理由：</p> <blockquote><p>因为基于组件树结构的事件流方式实在是让人难以理解，并且在组件结构扩展的过程中会变得越来越脆弱。并且 <code>$dispatch</code> 和 <code>$broadcast</code> 也没有解决兄弟组件间的通信问题。</p></blockquote> <p>可以看到，主要原因是在组件结构扩展后不易理解，以及没有解决兄弟组件通信的问题。但是对于组件库来说，这依旧是十分有用的，所以它们大多自己实现了这两个方法。对我们来讲，也许在项目中用不到，但学习这种解决问题的思路，是十分必要的。</p> <p>派发和广播，依赖于组件的 name（最怕此处有人说：如果不写 name，这方法不就没用了？2333···），以此来逐级查找对应的组件实例。Element 的实现中，给所有的组件都加了一个 componentName 属性，所以它是根据 componentName 来查找的。我们在实现的时候还是直接用 name。</p> <p>我们先来看一下 <code>$dispatch</code> 的简单用法，再来分析思路。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!--communication-min-sub.vue--&gt;
+&lt;template&gt;
+  &lt;button @click=&quot;handleDispatch&quot;&gt;dispatch&lt;/button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Emitter from '../../utils/emitter';
+export default {
+  mixins: [Emitter], // 混入，方便直接调用
+  methods: {
+    handleDispatch () {
+      this.dispatch('communication', 'onMessage', '触发了dispatch');
+    }
+  }
+}
+&lt;/script&gt;
+&lt;!--communication.vue--&gt;
+&lt;script&gt;
+  export default {
+    beforeDestroy() { // 销毁
+        this.$off('onMessage');
+    },
+    mounted () {
+        this.$on('onMessage', (data) =&gt; { // 监听
+            this.dataProps.title = data;
+        })
+    }
+  }
+&lt;/script&gt;
+</code></pre></div><p>现在明确一下目标，dispatch 方法接收三个参数，组件 name、事件名称、基础数据（可不传）。要做到向上跨级派发事件，需要向上找到指定 name 的组件实例，利用我们前文提到的 <code>$emit</code>方法做派送，所以在指定组件就可以用 <code>$on</code> 来监听了。所以 dispatch 本质上就是向上查找到指定组件并触发其自身的 <code>$emit</code>，以此来做响应，broadcast 则相反。那么如何做到跨级查找呢？</p> <div class="language- extra-class"><pre class="language-text"><code>function broadcast(componentName, eventName, params) {
+  this.$children.forEach(child =&gt; { // 遍历所有的 $children
+    var name = child.$options.name; // 拿到实例的name，Element 此处用的 componentName
+    if (name === componentName) { // 如果是想要的那个，进行广播
+      child.$emit.apply(child, [eventName].concat(params));
+    } else { // 不是则递归查找 直到 $children 为 []
+      broadcast.apply(child, [componentName, eventName].concat([params]));
+    }
+  });
+}
+export default {
+  methods: {
+    dispatch(componentName, eventName, params) {
+      var parent = this.$parent || this.$root;
+      var name = parent.$options.name;
+      while (parent &amp;&amp; (!name || name !== componentName)) {
+      // 存在 parent 且 (不存在 name 或 name 和 指定参数不一样) 则继续查找
+        parent = parent.$parent; // 不存在继续取上级
+        if (parent) {
+          name = parent.$options.name; // 存在上级 再次赋值并再次循环，进行判断
+        }
+      }
+      if (parent) { // 找到以后 如果有 进行事件派发
+        parent.$emit.apply(parent, [eventName].concat(params));
+      }
+    },
+    broadcast(componentName, eventName, params) {
+      broadcast.call(this, componentName, eventName, params);
+    }
+  }
+};
+</code></pre></div><p>以上是详细的 emitter.js，可以看见，这和我们之前讲到的 <code>$parent</code>、<code>$children</code>、<code>$emit</code>、<code>$on</code>都密切相关。这也是为什么把它放到后面讲的原因。之前说过，派发和广播并没有解决兄弟组件通信的问题，所以这里大家也可以拓展思考一下，如何支持兄弟组件间通信。依然是依赖于<code>$parent</code>、<code>$children</code>，可以找到任意指定组件。</p> <h3 id="vuex"><a href="#vuex" class="header-anchor">#</a> Vuex</h3> <blockquote><p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。--- <a href="https://vuex.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>Vuex 相信大家都比较熟悉了，我不打算在这里把 API 再演示一遍。因为我觉得，官方文档 已经非常详细了。Vuex 的核心是单向数据流，并以相应规则保证所有的状态管理都可追踪、可预测。</p> <p>我们需要知道什么时候该用 Vuex，如果你的项目比较小，状态管理比较简单，完全没有必要使用 Vuex，你可以考虑我们前文提到的几种方式。</p> <p><strong>父组件和子组件的执行顺序</strong>？</p> <blockquote><p>A：父beforeCreate-&gt; 父created -&gt; 父beforeMounte -&gt; 子beforeCreate -&gt;子create -&gt;子beforeMount -&gt;子 mounted -&gt; 父mounted</p></blockquote> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>本期文章内容到这里就讲完了，我们来总结回顾一下：</p> <ul><li>子组件触达父组件的方式：Props、<code>$parent</code>、<code>$attrs</code>、<code>$listeners</code>、provide 和 inject、<code>$dispatch</code></li> <li>父组件触达子组件的方式：<code>$emit</code> 和 <code>$on</code>、<code>$children</code>、<code>$ref</code>、<code>broadcast</code></li> <li>全局通信：EventBus、Vuex</li></ul></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#组件间通信" class="sidebar-link reco-side-组件间通信" data-v-70334359>组件间通信</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#props" class="sidebar-link reco-side-props" data-v-70334359>Props</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#attrs、listeners" class="sidebar-link reco-side-attrs、listeners" data-v-70334359>attrs、listeners</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#依赖注入-provide、inject" class="sidebar-link reco-side-依赖注入-provide、inject" data-v-70334359>依赖注入 provide、inject</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#ref、parent、children" class="sidebar-link reco-side-ref、parent、children" data-v-70334359>ref、parent、children</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#emit、on、off" class="sidebar-link reco-side-emit、on、off" data-v-70334359>emit、on、off</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#eventbus" class="sidebar-link reco-side-eventbus" data-v-70334359>EventBus</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#派发与广播-dispatch-与-broadcast" class="sidebar-link reco-side-派发与广播-dispatch-与-broadcast" data-v-70334359>派发与广播：dispatch 与 broadcast</a></li><li class="level-3" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#vuex" class="sidebar-link reco-side-vuex" data-v-70334359>Vuex</a></li><li class="level-2" data-v-70334359><a href="/blog/views/Vue/ZuJianChuanZhi.html#总结" class="sidebar-link reco-side-总结" data-v-70334359>总结</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.53342be2.js" defer></script><script src="/blog/assets/js/3.0b1a4a80.js" defer></script><script src="/blog/assets/js/1.a6e5c523.js" defer></script><script src="/blog/assets/js/62.fb827046.js" defer></script>
+  </body>
+</html>
